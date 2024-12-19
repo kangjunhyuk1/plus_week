@@ -29,6 +29,7 @@ public class UserRoleInterceptor implements HandlerInterceptor {
             throw new UnauthorizedException(HttpStatus.UNAUTHORIZED, "user 권한이 필요합니다.");
         }
 
+
         return true;
     }
 }
